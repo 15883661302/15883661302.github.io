@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Rubber Stamp</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- 导航 -->
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.jpg" width="40px" height="40px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">首页 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tutorial.html">教程 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Material.html">素材 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              画廊
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Gallery.html">创作者介绍</a>
+              <a class="dropdown-item" href="Myworks.html">我的作品</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">联系开发者 <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="搜索……" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">搜索</button>
+        </form>
+      <a href="#">
+        <button type="button" class="btn btn-outline-light btn-sm border-0">
+          <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-file-earmark-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 1H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h5v-1H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h5v2.5A1.5 1.5 0 0 0 10.5 6H13v2h1V6L9 1z"/>
+            <path fill-rule="evenodd" d="M13.5 10a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z"/>
+            <path fill-rule="evenodd" d="M13 12.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
+          </svg>
+        </button>
+      </a>
+      <div class="dropdown">
+        <button type="button" class="btn btn-outline-light btn-sm border-0" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-file-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4z"/>
+            <path d="M13.784 14c-.497-1.27-1.988-3-5.784-3s-5.287 1.73-5.784 3h11.568z"/>
+            <path fill-rule="evenodd" d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">个人中心</a>
+          <a class="dropdown-item" href="#">我的关注</a>
+          <a class="dropdown-item" href="#">我的收藏</a>
+          <a class="dropdown-item" href="#">我的消息</a>
+          <a class="dropdown-item" href="#">浏览历史</a>
+          <hr class="line1">
+          <a class="dropdown-item" href="login.html">登录</a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </nav>
+<!-- 推送 -->
+<div class="coutainer-fluid">
+  <div class="row jumbotron bg-light">
+    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-8">
+      <a href="#">
+        <img src="img/tuisong.jpg" class="figure-img img-fluid rounded" >
+        <div class="carousel-caption d-none d-md-block">
+          <h4>今日推荐</h4>
+          <p class="lead">橡皮章插画师——路上路作品欣赏</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2">
+    </div>
+
+<!-- 教程一行 -->
+
+  <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2">
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-8">
+    <div class="d-flex bd-highlight">
+      <div class="p-2 flex-grow-1 bd-highlight">
+        <h1 class="lead">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="a bi-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+          </svg>
+          教程
+        </h1>
+      </div>
+      <div class="p-2 bd-highlight">
+        <a href="Tutorial.html" class="a">更多</a>
+      </div>
+    </div>
+    <hr class="line1">
+
+    <div class="card-deck mb-5">
+      <div class="card shadow-sm">
+        <img src="img/JC02.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="tutorial-eg.html" class="text-reset">
+            <h5 class="card-title">方棱（巧克力）留白</h5>
+          </a>
+          <p class="card-text">by 鬼咲</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">上次更新：刚刚</small>
+        </div>
+      </div>
+      <div class="card shadow-sm">
+        <img src="img/JC05.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="text-reset">
+            <h5 class="card-title">水墨风格橡皮章+简易套色对位器</h5>
+          </a>
+          <p class="card-text">by 青蛇</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">上次更新：10分钟前</small>
+        </div>
+      </div>
+      <div class="card shadow-sm">
+        <img src="img/JC03.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="text-reset">
+            <h5 class="card-title">惊喜卡制作过程</h5>
+          </a>
+          <p class="card-text">by 指染丹青</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">上次更新：1天前</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2">
+  </div>
+
+<!-- 素材一行 -->
+  <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2">
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-8">
+    <div class="d-flex bd-highlight">
+      <div class="p-2 flex-grow-1 bd-highlight">
+        <h1 class="lead">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="b bi-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+          </svg>
+          素材
+        </h1>
+      </div>
+      <div class="p-2 bd-highlight">
+        <a href="Material.html" class="b">更多</a>
+      </div>
+    </div>
+    <hr class="line2">
+
+    <div class="card-deck mb-5">
+      <div class="card shadow-sm">
+        <img src="img/SC01.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="text-reset">
+            <h5 class="card-title">花卉专题</h5>
+          </a>
+          <p class="card-text"><small class="text-muted">上次更新：3分钟前</small></p>
+        </div>
+      </div>
+      <div class="card shadow-sm">
+        <img src="img/SC02.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="text-reset">
+            <h5 class="card-title">手图合辑</h5>
+          </a>
+          <p class="card-text"><small class="text-muted">上次更新：5小时前</small></p>
+        </div>
+      </div>
+      <div class="card shadow-sm">
+        <img src="img/SC03.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="text-reset">
+            <h5 class="card-title">字素</h5>
+          </a>
+          <p class="card-text"><small class="text-muted">上次更新：3天前</small></p>
+        </div>
+      </div>
+      <div class="card shadow-sm">
+        <img src="img/SC04.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="text-reset">
+            <h5 class="card-title">建筑专题</h5>
+          </a>
+          <p class="card-text"><small class="text-muted">上次更新：2020-05-13</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2">
+  </div>
+<!-- 创作者 -->
+  <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2">
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-8">
+    <div class="d-flex bd-highlight">
+      <div class="p-2 flex-grow-1 bd-highlight">
+        <h1 class="lead">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="c bi-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+          </svg>
+          创作者
+        </h1>
+      </div>
+      <div class="p-2 bd-highlight">
+        <a href="Gallery.html" class="c">更多</a>
+      </div>
+    </div>
+    <hr class="line3">
+
+    <div class="card-deck mb-5">
+      <div class="card border-0 bg-light">
+        <a href="#" class="text-reset">
+          <img src="img/lushanglu.jpg" class="card-img-top rounded-circle" alt="...">
+        </a>
+        <div class="card-body">
+          <a href="#" class="text-reset"><p class="card-text text-center">路上路</p></a>
+          <p class="card-text text-center"><small class="text-muted">《橡皮章插画狂想曲》作者</small></p>
+        </div>
+      </div>
+      <div class="card border-0 bg-light">
+        <a href="#" class="text-reset">
+          <img src="img/zk.jpg" class="card-img-top rounded-circle" alt="...">
+        </a>
+        <div class="card-body">
+          <a href="#" class="text-reset"><p class="card-text text-center">章坑</p></a>
+          <p class="card-text text-center"><small class="text-muted">橡皮章作者</small></p>
+        </div>
+      </div>
+      <div class="card border-0 bg-light">
+        <a href="#" class="text-reset">
+          <img src="img/Carnicero.jpg" class="card-img-top rounded-circle" alt="...">
+        </a>
+        <div class="card-body">
+          <a href="#" class="text-reset"><p class="card-text text-center">Carnicero</p></a>
+          <p class="card-text text-center"><small class="text-muted">橡皮章作者</small></p>
+        </div>
+      </div>
+      <div class="card border-0 bg-light">
+        <a href="#" class="text-reset">
+          <img src="img/yu.jpg" class="card-img-top rounded-circle" alt="...">
+        </a>
+        <div class="card-body">
+          <a href="#" class="text-reset"><p class="card-text text-center">郁</p></a>
+          <p class="card-text text-center"><small class="text-muted">橡皮章作者</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2">
+  </div>
+</div>
+</div>
+<!-- 广告 -->
+<div class="coutainer-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-8">
+      <div class="card">
+        <div class="dropdown text-right">
+          <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <small class="text-muted">广告</small>
+
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">不感兴趣</a>
+            <a class="dropdown-item" href="#">广告投放</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+
+        <a href="#"><img src="img/AD.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <p class="card-text">橡皮章入门基本技巧以及设计思路！<a href="#" class="a">立即购买</a></p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2">
+    </div>
+  </div>
+</div>
+
+
+<!-- 页脚 -->
+<footer>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-md-6">
+        <hr class="line1">
+        <img src="img/logo.jpg" width="30px" height="30px">
+        <hr class="line1">
+
+        <a href="#" class="a">关于我们</a>|
+        <a href="#" class="a">加入我们</a>|
+        <a href="#" class="a">隐私条款</a>|
+        <a href="#" class="a">意见反馈</a>
+        <p class="a">&copy;2020 Rubber stamp</p>
+      </div>
+
+      <div class="col-md-6">
+        <hr class="line1">
+        <p class="lead">联系方式</p>
+        <hr class="line1">
+        <!-- pixiv -->
+        <a href="https://www.pixiv.net/users/11868065" class="text-decoration-none">
+          <img src="SVG/Pixiv.svg">
+        </a>
+        <!-- twitter -->
+        <a href="#" class="text-decoration-none">
+          <img src="SVG/twitter.svg">
+        </a>
+        <!-- ins -->
+        <a href="#" class="text-decoration-none">
+          <img src="SVG/instagram.svg">
+        </a>
+        <!-- QQ -->
+        <a href="#" class="text-decoration-none">
+          <img src="SVG/QQ.svg">
+        </a>
+        <a href="https://weibo.com/yjx520521" class="text-decoration-none">
+          <img src="SVG/weibo.svg">
+        </a>
+        <a href="https://space.bilibili.com/4314846" class="text-decoration-none">
+          <img src="SVG/bilibili.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Rubber Stamp-教程详情页</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- 导航 -->
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.jpg" width="40px" height="40px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">首页 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Tutorial.html">教程 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Material.html">素材 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              画廊
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Gallery.html">创作者介绍</a>
+              <a class="dropdown-item" href="Myworks.html">我的作品</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">联系开发者 <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="搜索……" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">搜索</button>
+        </form>
+      <a href="#">
+        <button type="button" class="btn btn-outline-light btn-sm border-0">
+          <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-file-earmark-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 1H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h5v-1H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h5v2.5A1.5 1.5 0 0 0 10.5 6H13v2h1V6L9 1z"/>
+            <path fill-rule="evenodd" d="M13.5 10a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z"/>
+            <path fill-rule="evenodd" d="M13 12.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
+          </svg>
+        </button>
+      </a>
+      <div class="dropdown">
+        <button type="button" class="btn btn-outline-light btn-sm border-0" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-file-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4z"/>
+            <path d="M13.784 14c-.497-1.27-1.988-3-5.784-3s-5.287 1.73-5.784 3h11.568z"/>
+            <path fill-rule="evenodd" d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">个人中心</a>
+          <a class="dropdown-item" href="#">我的关注</a>
+          <a class="dropdown-item" href="#">我的收藏</a>
+          <a class="dropdown-item" href="#">我的消息</a>
+          <a class="dropdown-item" href="#">浏览历史</a>
+          <hr class="line1">
+          <a class="dropdown-item" href="login.html">登录</a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </nav>
+  <!-- 主体 -->
+  <div class="coutainer-fluid">
+  <div class="row jumbotron bg-light">
+    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-6">
+      <h1>方棱留白（凹凸巧克力留白）教程</h1>
+      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+        <button type="button" class="btn-x btn btn-light">收藏</button>
+        <button type="button" class="btn-y btn btn-light">点赞</button>
+        <button type="button" class="btn-z btn btn-light">分享</button>
+      </div>
+      <p>《桃花庵歌》这个章子，很多朋友喜欢，也很多人问我这种留白怎么刻，于是拿出来给大家分享一下。</p>
+<p>因为最近很忙，教程用的章是赶时间刻得，所以刻得比较潦草，但是重在教程，章子方面还请大家别嫌弃。</p>
+<p>关于留白的名字，我只是觉得方块有棱角，于是就叫方棱留白了，但是群里得孩子们非说像巧克力。</p>
+<p>于是被他们定义成：（凹凸巧克力留白）这么奇葩的名字。</p>
+<p>这种留白方法，很适用在整齐的印刷字体上，当然其他地方也完全可以用，就看你怎么用。</p>
+<p>很简单的一种留白方法，只要懂了原理，很容易刻好，当然凡事还要多练习。</p>
+<p>教程不懂的地方随便问，但是！请别问我这个留白教程以外的问题。。谢谢合作。。。</p>
+<p><img src="img/JC02-01.jpg"></p>
+<p>第一步：转印，这种类型的字，描图反而毁，当然不擅长转印的我，依然毁了。
+<p><img src="img/JC02-02.jpg"></p>
+<p>第二步：切边。这步可以根据个人喜好来，不喜欢切掉，外平也可以，但是我嫌麻烦。还是切掉吧。</p>
+<p><img src="img/JC02-03.jpg"></p>
+<p>第三步：画线。沿着字的边缘比较好。横平竖直。</p>
+<p>这个章子选的不是很好，有的字大，间距也有点不整齐。这就要看情况发挥了，大出来的部分，我选择了无视。等下面刻得时候再说这里。</p>
+<p><img src="img/JC02-04.jpg"></p>
+<p>第四步：刻竖方向画的线，大家都会吧，左一刀，右一刀。</p>
+<p><img src="img/JC02-05.jpg"></p>
+<p>第五步：刻横方向画的线。到这步已经能看到基本的方块样子了。</p>
+<p>细心的孩子发现了吗，大号字多出的部分，刻得时候让出来就哦了。</p>
+<p><img src="img/JC02-06.jpg"></p>
+<p>第七步：刻棱边，这步是重点。在红箭头指着的位置，斜着下刀刻，这个”回"字的四个方向都用同样的方法刻一遍。下刀的深浅长短，根据字不同也不同。就得自己掌握了，多练习。</p>
+<p><img src="img/JC02-07.jpg"></p>
+<p><img src="img/JC02-08.jpg"></p>
+<p>发教程这么正经的事儿，难得的清理了一下章子。</p>
+<p>不如《桃花庵歌》有感觉，因为这个留白，字越多越有逼格。欢迎大家百字自虐。</p>
+<p><img src="img/JC02-09.jpg"></p>
+<p><img src="img/JC02-10.jpg"></p>
+<p>最后《桃花庵歌》放一发。</p>
+<p><img src="img/JC02-11.jpg"></p>
+<p><img src="img/JC02-12.jpg"></p>
+<p><img src="img/JC02-13.jpg"></p>
+
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+      <br><br><br>
+      <h5>作者：<a href="#">鬼咲</a></h5>
+      <div class="card border-0 bg-light">
+        <a href="#" class="text-reset">
+          <img src="img/guixiao.jpg" class="card-img-top rounded-circle" alt="...">
+        </a>
+      </div>
+      <br><br><br>
+
+      <h5>相关推荐:</h5>
+        <p><a href="#">三角留白教程</a></p>
+        <p><a href="#">平留白简单教程</a></p>
+        <p><a href="#">花样留白——宝石留白</a></p>
+        <p><a href="#">切边教程</a></p>
+
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2">
+    </div>
+  </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <hr class="line1">
+          <img src="img/logo.jpg" width="30px" height="30px">
+          <hr class="line1">
+
+          <a href="#" class="a">关于我们</a>|
+          <a href="#" class="a">加入我们</a>|
+          <a href="#" class="a">隐私条款</a>|
+          <a href="#" class="a">意见反馈</a>
+          <p class="a">&copy;2020 Rubber stamp</p>
+        </div>
+
+        <div class="col-md-6">
+          <hr class="line1">
+          <p class="lead">联系方式</p>
+          <hr class="line1">
+          <!-- pixiv -->
+          <a href="https://www.pixiv.net/users/11868065" class="text-decoration-none">
+            <img src="SVG/Pixiv.svg">
+          </a>
+          <!-- twitter -->
+          <a href="#" class="text-decoration-none">
+            <img src="SVG/twitter.svg">
+          </a>
+          <!-- ins -->
+          <a href="#" class="text-decoration-none">
+            <img src="SVG/instagram.svg">
+          </a>
+          <!-- QQ -->
+          <a href="#" class="text-decoration-none">
+            <img src="SVG/QQ.svg">
+          </a>
+          <a href="https://weibo.com/yjx520521" class="text-decoration-none">
+            <img src="SVG/weibo.svg">
+          </a>
+          <a href="https://space.bilibili.com/4314846" class="text-decoration-none">
+            <img src="SVG/bilibili.svg">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
